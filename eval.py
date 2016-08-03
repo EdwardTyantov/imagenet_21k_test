@@ -53,5 +53,5 @@ print("Top1: ", top1)
 # Get top5 label
 top5 = [synset[pred[i]] for i in range(5)]
 print("Top5: ", top5)
-print()
+print("")
 
