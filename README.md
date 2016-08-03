@@ -16,7 +16,7 @@ pip install scikit-image
 wget http://data.dmlc.ml/mxnet/models/imagenet/inception-21k.tar.gz; tar -xf inception-21k.tar.gz
 ```
 
-- test an image by launching
+#Test
 
 ```
 python eval.py images/trump.jpg
