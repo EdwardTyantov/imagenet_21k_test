@@ -41,6 +41,7 @@ def PreprocessImage(path, show_img=False):
 
 
 # Get preprocessed batch (single image batch)
+print('Processing:', sys.argv[1])
 batch = PreprocessImage(sys.argv[1], True)
 # Get prediction probability of 1000 classes from model
 prob = model.predict(batch)[0]
@@ -51,5 +52,5 @@ top1 = synset[pred[0]]
 print("Top1: ", top1)
 # Get top5 label
 top5 = [synset[pred[i]] for i in range(5)]
-print("Top5: ", top5)
+print("Top5: \n", top5)
 
