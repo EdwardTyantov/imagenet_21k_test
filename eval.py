@@ -3,6 +3,8 @@ import sys
 import mxnet as mx
 import logging
 import numpy as np
+import matplotlib
+matplotlib.use('Agg')
 from skimage import io, transform
 
 logger = logging.getLogger()
